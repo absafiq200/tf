@@ -1,5 +1,5 @@
 data "aws_subnets" "mypv_subnet" {
-  filter = {
+  filter {
     name  = "tag:Type"
     value = ["Private"]
   }
