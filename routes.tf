@@ -2,7 +2,7 @@ data "aws_vpc" "default" {
 
 }
 
-
+/*
 resource "aws_route_table" "my_rt_pvt" {
   vpc_id = data.aws_vpc.default.id
   tags = {
@@ -15,3 +15,4 @@ resource "aws_route_table_association" "assco_rt" {
   subnet_id      = each.value
   route_table_id = aws_route_table.my_rt_pvt.id
 }
+*/
