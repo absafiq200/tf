@@ -1,5 +1,5 @@
 resource "aws_lb_target_group" "my_tg" {
-  name     = "mu target group"
+  name     = "my_target_group"
   port     = 80
   protocol = "HTTP"
   vpc_id   = data.aws_vpc.default.id
