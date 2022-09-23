@@ -22,3 +22,7 @@ output "ami_op" {
   value = aws_ami_from_instance.my_ami
 }
 */
+
+output "lb_op" {
+  value = aws_lb.my_lb
+}
