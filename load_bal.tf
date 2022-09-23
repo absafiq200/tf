@@ -8,7 +8,13 @@ resource "aws_lb" "my_lb" {
 
 }
 
-resource "aws_lb_target_group_attachment" "my_attach_tg" {
-  target_group_arn = aws_lb_target_group.my_tg.arn
-  target_id        = aws_lb.my_lb.id
+resource "aws_lb_listener" "front_end" {
+  load_balancer_arn = aws_lb.my_lb.arn
+  port              = "90"
+  protocol          = "HTTP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.my_tg.arn
+  }
 }
