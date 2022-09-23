@@ -4,12 +4,11 @@ resource "aws_security_group" "my_ssh_80" {
   vpc_id      = data.aws_vpc.default.id
 
   ingress {
-    description      = "allow 80"
-    from_port        = 80
-    to_port          = 80
-    protocol         = "tcp"
-    cidr_blocks      = [data.aws_vpc.default.cidr_block]
-    ipv6_cidr_blocks = [data.aws_vpc.default.ipv6_cidr_block]
+    description = "allow 80"
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = [data.aws_vpc.default.cidr_block]
   }
 
   egress {
