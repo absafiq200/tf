@@ -1,10 +1,12 @@
 data "aws_subnets" "mypv_subnet" {
-  filter {
-    name  = "tag:Type"
-    value = ["Private"]
+  /*  filter {
+    name   = "tag:Type"
+    values = ["Private"]
+  }
+  */
+  tags = {
+    Type = "Private"
   }
 }
 
-output "my_pv_subn" {
-  value = data.aws_subnets.mypv_subnet.id
-}
+
