@@ -17,23 +17,23 @@ variable "linux_key_pair" {
 }
 
 variable "my_root_volume_size" {
-  type = number
+  type        = number
   description = "Root volume size"
 }
 
 variable "my_root_volume_type" {
-  type = string
+  type        = string
   description = "root volume type"
-  default = "gp2"
+  default     = "gp2"
 }
 
 variable "my_data_volume_size" {
-  type = number
+  type        = number
   description = "my data volume size"
 }
 
 variable "my_data_volume_type" {
-  type string
+  type        = string
   description = "my data volume type"
-  default = "gp2"
+  default     = "gp2"
 }
