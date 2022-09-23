@@ -3,7 +3,7 @@ resource "aws_lb" "my_lb" {
   internal                   = false
   load_balancer_type         = "application"
   security_groups            = [aws_security_group.my_ssh_if.id]
-  subnets                    = ["subnet-07980e951c301b326"]
+  subnets                    = ["subnet-07980e951c301b326", "subnet-0ef8ff159a6518374"]
   enable_deletion_protection = true
 
 }
