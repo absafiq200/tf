@@ -1,6 +1,5 @@
-#! /bin/bash
-sudo yum update -y
-sudo yum install -y httpd
-sudo systemctl start httpd
-sudo systemctl enable httpd
-echo "<h1>Welcome to shafeeq.us from server 2</h1>" > /var/www/html/index.html
+IyEgL2Jpbi9iYXNoCnN1ZG8geXVtIHVwZGF0ZSAteQpzdWRvIHl1bSBpbnN0YWxsIC15IGh0dHBk
+CnN1ZG8gc3lzdGVtY3RsIHN0YXJ0IGh0dHBkCnN1ZG8gc3lzdGVtY3RsIGVuYWJsZSBodHRwZAp1
+c2VybW9kIC1hIC1HIGFwYWNoZSBlYzItdXNlcgpjaG93biAtUiBlYzItdXNlcjphcGFjaGUgL3Zh
+ci93d3cKY2htb2QgMjc3NSAvdmFyL3d3dwplY2hvICI8aDE+V2VsY29tZSB0byBzaGFmZWVxICEg
+c2VydmVyIDI8L2gxPiIgPiAvdmFyL3d3dy9odG1sL2luZGV4Lmh0bWwK

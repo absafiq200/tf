@@ -1,7 +1,7 @@
 variable "inst_type" {
   type        = string
   description = "vm instance type"
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 variable "ami_id" {
