@@ -15,3 +15,25 @@ variable "linux_key_pair" {
   description = "key pair name"
   default     = "safkey"
 }
+
+variable "my_root_volume_size" {
+  type = number
+  description = "Root volume size"
+}
+
+variable "my_root_volume_type" {
+  type = string
+  description = "root volume type"
+  default = "gp2"
+}
+
+variable "my_data_volume_size" {
+  type = number
+  description = "my data volume size"
+}
+
+variable "my_data_volume_type" {
+  type string
+  description = "my data volume type"
+  default = "gp2"
+}
